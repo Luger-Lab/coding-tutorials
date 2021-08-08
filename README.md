@@ -1,6 +1,6 @@
 # coding-tutorials
 ## Goal
-This set of tutorials will teach [lugerlab](https://lugerlab.org/) members the coding skills they need to analyze data, understand analysis software, and write code to make or improve software.
+This set of tutorials will teach [lugerlab](https://lugerlab.org/) members the how to process, analyze, and present structural data.
 ## Tutorials
 0. [Basic computing - Linux, Bash, and SLURM](https://github.com/Luger-Lab/coding-tutorials/#basic-computing---linux-bash-and-slurm)
 0. [Basic computing - How computers work](https://github.com/Luger-Lab/coding-tutorials/#basic-computing---how-computers-work)
