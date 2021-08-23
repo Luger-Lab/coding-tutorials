@@ -46,3 +46,4 @@ Commands in bash are entered directly into the command line, generally in the fo
   - Outputs are where to put the result of the command. Some commands have these, some don't.
   - **As a rule of thumb, most programs will return a brief documentation page when ran with the flag "--help":**
           ls --help
+          
