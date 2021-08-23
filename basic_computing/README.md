@@ -30,4 +30,4 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 ## Bash
 0. Description
 
-Bash is a powerful programming language Linux-based operating systems use to perform tasks. Most of the time user-facing programs will use an easier to debug language like Python or MatLab, but you will need to use bash to navigate  
+Bash is a powerful programming language that Linux-based operating systems use to perform tasks. Most of the time user-facing programs will use an easier language to debug like Python or MatLab, but you will need to use bash to navigate around the terminal and launch jobs.
