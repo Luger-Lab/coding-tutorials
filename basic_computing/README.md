@@ -4,8 +4,8 @@
 0. [Bash](#bash)
   0. Description
   0. Setting up a sandbox
-  0. Navigation
   0. Basic commands
+  0. Navigation
   0. Variables
   0. Loops
   0. Text editors
@@ -30,4 +30,19 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 ## Bash
 0. Description
 
-Bash is a powerful programming language that Linux-based operating systems use to perform tasks. Most of the time user-facing programs will use an easier language to debug like Python or MatLab, but you will need to use bash to navigate around the terminal and launch jobs.
+Bash is a powerful programming language that Linux-based operating systems use to perform tasks. Most of the time user-facing programs will use an easier language to debug like Python or MatLab, but you will need to use Bash to navigate around the terminal and launch jobs.
+
+0. Setting up a sandbox
+
+0. Basic commands
+Commands in bash are entered directly into the command line, generally in the following format:
+        <command> --<option> <input> <output>
+  - The commands are actually executable scripts somewhere in your PATH (usually in your bin folder).
+  - Options or "flags" modify the command in someway, like changing the behavior or explicitly defining some input/output. Most of the time, the long form of the option will have two dashes, as in:
+          ls --all
+  Whereas one letter abbreviations use one dash:
+          ls -a
+  - Inputs are generally file names or a value required by the option defined.
+  - Outputs are where to put the result of the command. Some commands have these, some don't.
+  - **As a rule of thumb, most programs will return a brief documentation page when ran with the flag "--help":**
+          ls --help
