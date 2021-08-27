@@ -1,4 +1,5 @@
 # Structural biology coding tutorials
+[View as website](https://luger-lab.github.io/coding-tutorials/basic_computing/)
 ## Goal
 This set of tutorials will teach [lugerlab](https://lugerlab.org/) members how to process, analyze, and present structural data. Click on a link from the list of tutorials to learn more about it. Then, click on the header for that section to take you to that tutorial.
 
