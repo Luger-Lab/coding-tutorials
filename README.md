@@ -18,7 +18,7 @@ This set of tutorials will teach [lugerlab](https://lugerlab.org/) members how t
 0. [EM analysis - cryoSparc](#em-analysis---cryosparc) (11/9/21 - E225)
 0. [Crystallography analysis - CCP4](#crystallography-analysis---ccp4) (11/16/21 - E225)
 0. [Molecular dynamics - AMBER](#molecular-dynamics---amber) (11/30/21 - E225)
-0. [Molecular dynamics - GROMACS](#molecular-dynamics---gromacs) (12/7/21 - E225)
+0. [Molecular dynamics - NAMD](#molecular-dynamics---namd) (12/7/21 - E225)
 0. [Presentation - Making figures and talks](#presentation---making-figures-and-talks) (12/14/21 - E225)
 
 ## [Basic computing - Linux, Bash, and SLURM](https://luger-lab.github.io/coding-tutorials/basic_computing/)
@@ -51,7 +51,7 @@ In addition to Chimera/X, VMD is a structural viewing program that is geared tow
 ## Molecular dynamics - AMBER
 After obtaining a structure, it is often informative to simulate it under different conditions and perturbations using molecular dynamics (MD) simulations. These simulations can help you understand how stable parts of the structure are as well as what impact specific perturbations might have. AMBER is a proprietary Python-based software which academic labs can use for a small fee. We will discuss how MD works generally, how to set up a simulation using AMBER, and how to interpret and analyze the resulting simulations. We will also discuss the main caveats of MD simulations.
 
-## Molecular dynamics - GROMACS
+## Molecular dynamics - NAMD
 GROMACS is another MD simulation software. One of its main advantages is that it is open source and free to use. This tutorial will cover the same aspects as the AMBER tutorial, as well as a discussion of how the two softwares differ and when to use each.
 
 ## Presentation - Making figures and talks
