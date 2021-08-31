@@ -3,23 +3,23 @@
 ## Goal
 This set of tutorials will teach [lugerlab](https://lugerlab.org/) members how to process, analyze, and present structural data. Click on a link from the list of tutorials to learn more about it. Then, click on the header for that section to take you to that tutorial.
 
+**All tutorials will be held Tuesdays from 3-5pm, starting 9/7.**
+
 ## Tutorials
-0. [Basic computing - Linux, Bash, and SLURM](#basic-computing---linux-bash-and-slurm)
-0. [Basic computing - How computers work](#basic-computing---how-computers-work)
-0. [Basic Python](#basic-python)
-0. [Github](#github)
-0. [Advanced Python - Jupyter notebooks, Matplotlib, and Plotly](#advanced-python---jupyter-notebooks-matplotlib-and-plotly)
-0. [Advanced Python - Writing clean code](#advanced-python---writing-clean-code)
-0. [Structural analysis - Chimera and ChimeraX](#structural-analysis---chimera-and-chimerax)
-0. [Structural analysis - VMD](#structural-analysis---vmd)
-0. [EM analysis - RELION](#em-analysis---relion)
-0. [EM analysis - cryoSparc](#em-analysis---cryosparc)
-0. [Crystallography analysis - Phenix](#crystallography-analysis---phenix)
-0. [Crystallography analysis - iMosflm](#crystallography-analysis---imosflm)
-0. [Molecular dynamics - AMBER](#molecular-dynamics---amber)
-0. [Molecular dynamics - GROMACS](#molecular-dynamics---gromacs)
-0. [Presentation - Making figures](#presentation---making-figures)
-0. [Presentation - Making talks](#presentation---making-talks)
+0. [Basic computing - Linux, Bash, and SLURM](#basic-computing---linux-bash-and-slurm) (9/7/21 - E225)
+0. [Basic computing - How computers work](#basic-computing---how-computers-work) (9/14/21 - B432)
+0. [Basic Python](#basic-python) (9/21/21 - E225)
+0. [Github](#github) (9/28/21 - E225)
+0. [Advanced Python - Jupyter notebooks, Matplotlib, and Plotly](#advanced-python---jupyter-notebooks-matplotlib-and-plotly) (10/5/21 - E225)
+0. [Advanced Python - Writing clean code](#advanced-python---writing-clean-code) (10/12/21 - B432)
+0. [Structural analysis - Chimera and ChimeraX](#structural-analysis---chimera-and-chimerax) (10/19/21 - E225)
+0. [Structural analysis - VMD](#structural-analysis---vmd) (10/24/21 - E225)
+0. [EM analysis - RELION](#em-analysis---relion) (11/2/21 - E225)
+0. [EM analysis - cryoSparc](#em-analysis---cryosparc) (11/9/21 - E225)
+0. [Crystallography analysis - CCP4](#crystallography-analysis---ccp4) (11/16/21 - E225)
+0. [Molecular dynamics - AMBER](#molecular-dynamics---amber) (11/30/21 - E225)
+0. [Molecular dynamics - GROMACS](#molecular-dynamics---gromacs) (12/7/21 - E225)
+0. [Presentation - Making figures and talks](#presentation---making-figures-and-talks) (12/14/21 - E225)
 
 ## [Basic computing - Linux, Bash, and SLURM](https://luger-lab.github.io/coding-tutorials/basic_computing/)
 Most scientific computing is conducted through operating systems based on the Linux kernel (such as CentOS or Ubuntu). These operating systems use a terminal language known as Bash. Although a lot of actual programming can be done through Bash, it is not as intuitive and easy to debug as languages like Python, so most people simply use it to navigate Linux-based systems and submit programs written in other languages. Some labs have individual workstations that allow users to run their jobs immediately; however scientific computing is trending towards cluster and cloud based data centers. These have the benefits of many more resources that are used more efficiently, they are managed by IT departments, and can be accessed from anywhere. The system most of these data centers rely on to manage which jobs are ran using which resources is called SLURM. In this module, we will discuss how and why we should use Linux, Bash, and SLURM.
@@ -47,16 +47,12 @@ In addition to Chimera/X, VMD is a structural viewing program that is geared tow
 
 ## EM analysis - RELION
 ## EM analysis - cryoSparc
-## Crystallography analysis - Phenix
-## Crystallography analysis - iMosflm
+## Crystallography analysis - CCP4
 ## Molecular dynamics - AMBER
 After obtaining a structure, it is often informative to simulate it under different conditions and perturbations using molecular dynamics (MD) simulations. These simulations can help you understand how stable parts of the structure are as well as what impact specific perturbations might have. AMBER is a proprietary Python-based software which academic labs can use for a small fee. We will discuss how MD works generally, how to set up a simulation using AMBER, and how to interpret and analyze the resulting simulations. We will also discuss the main caveats of MD simulations.
 
 ## Molecular dynamics - GROMACS
 GROMACS is another MD simulation software. One of its main advantages is that it is open source and free to use. This tutorial will cover the same aspects as the AMBER tutorial, as well as a discussion of how the two softwares differ and when to use each.
 
-## Presentation - Making figures
-This tutorial will cover tips on how to present structural data, graphs, and figures in papers and talks. We will also go into how to tailor these to a specific audience, choose colors, and keep figures focused to convey specific meaning.
-
-## Presentation - Making talks
-Making a salient talk is one of the hardest skills to master for academic researchers. Much of this presentation will be adapted from the work of [Dan Larramore](link to dans website), who's talk on this subject can be found [here](insert dans talk). We also discuss how to integrate structural data into talks, use powerful features of Microsoft PowerPoint, and create interactive slides.
+## Presentation - Making figures and talks
+This tutorial will cover tips on how to present structural data, graphs, and figures in papers and talks. We will also go into how to tailor these to a specific audience, choose colors, and keep figures focused to convey specific meaning. Making a salient talk is one of the hardest skills to master for academic researchers. Much of this presentation will be adapted from the work of [Dan Larramore](link to dans website), who's talk on this subject can be found [here](insert dans talk). We also discuss how to integrate structural data into talks, use powerful features of Microsoft PowerPoint, and create interactive slides.
