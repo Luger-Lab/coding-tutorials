@@ -4,7 +4,7 @@
 0. [Linux](#linux)
 0. [Bash](#bash)
 
-    0. Description
+    1. Description
     0. Setting up a sandbox
     0. Basic commands
     0. Navigation
@@ -16,7 +16,7 @@
 
 0. [SLURM](#slurm)
 
-    0. Description
+    1. Description
     0. Sbatch scripts
     0. Queues
     0. Out and error files
