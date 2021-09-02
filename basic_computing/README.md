@@ -3,6 +3,7 @@
 ## Contents
 0. [Linux](#linux)
 0. [Bash](#bash)
+
     0. Description
     0. Setting up a sandbox
     0. Basic commands
@@ -12,7 +13,9 @@
     0. Text editors
     0. Running scripts
     0. Connecting to clusters
+
 0. [SLURM](#slurm)
+
     0. Description
     0. Sbatch scripts
     0. Queues
