@@ -83,6 +83,8 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
       0. **pwd** The next thing we need to know is where we are, we can figure this out by using the command `pwd`, which prints the working directory and will give an output like: `/home/shawn/`. Here, each backslash represents another layer of the file tree and is know as the 'absolute path'. Try it and see where you are, as we move about later, try it again to keep oriented.
 
+      0. **echo**
+
       0. **touch** There are many ways to make a new file, but the most direct way is simply `touch <filename>`. This command creates an empty file that you can then do things with. Try this command using your own filename and use the extension '.txt' **remember not to `touch` a filename that already exists as it will overwrite it.**
       0. **mkdir** Similar to touch, we can also make a directory using `mkdir <directory_name>`.
       0. **cp** One thing you can do with this new file is 'copy' it. This is the first command we've used that requires two arguments: `cp <source_file> <destination_file>`
@@ -128,10 +130,14 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 0. ##### Connecting to remote computers #####
     0. ssh
     0. Putty
+    0. Forwarding
+    0. **exit**
 
 0. ##### Advanced commands #####
     0. **top**
     0. **crtl+c**
+    0. **history**
+    0. **clear**
     0. **rsync**
     0. **grep**
     0. **screen**
