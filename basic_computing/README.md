@@ -3,23 +3,23 @@
 ## Contents
 0. [Linux](#linux)
 0. [Bash](#bash)
-  0. Description
-  0. Setting up a sandbox
-  0. Basic commands
-  0. Navigation
-  0. Variables
-  0. Loops
-  0. Text editors
-  0. Running scripts
-  0. Connecting to clusters
+    0. Description
+    0. Setting up a sandbox
+    0. Basic commands
+    0. Navigation
+    0. Variables
+    0. Loops
+    0. Text editors
+    0. Running scripts
+    0. Connecting to clusters
 0. [SLURM](#slurm)
-  0. Description
-  0. Sbatch scripts
-  0. Queues
-  0. Out and error files
-  0. Starting, stopping, and monitering jobs
-  0. Dependencies
-  0. Best practices
+    0. Description
+    0. Sbatch scripts
+    0. Queues
+    0. Out and error files
+    0. Starting, stopping, and monitering jobs
+    0. Dependencies
+    0. Best practices
 
 ## Linux
 Linux is the kernel on which most high performance computing (HPC) is done. A kernel is the software that allows an operating system to control physical hardware. The Linux kernel is based on UNIX and is open source and free to use by anyone, as its creator Linus Tuvolds started the kernel under a GNU license back in the 90's. Anyone can contribute code to the kernel, as long as it passes a series of revisions and oversight. Because so many people contribute to the code it is constantly being improved.
