@@ -18,7 +18,7 @@
 
 0. [SLURM](#slurm)
 
-    0. [Description](#description)
+    0. [Description](#description-1)
     0. [Sbatch scripts](#sbatch-scripts)
     0. [Queues](#queues)
     0. [Out and error files](#out-and-error-files)
@@ -105,7 +105,9 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       - A specific directory by specifying the absolute path `cd /home/jon`
       - Your home directory with either `cd ~` or simply `cd`
     0. **mv**
-    0. **tab filling**
+    0. Tab filling
+    0. Home directory
+    0. Permissions
 
 0. ##### Piping #####
 
@@ -133,6 +135,8 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     0. **rsync**
     0. **grep**
     0. **screen**
+    0. **chmod**
+    0. **sudo**
 
 ## Slurm
   0. ##### Description #####
