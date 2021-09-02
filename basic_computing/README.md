@@ -4,10 +4,10 @@
 0. [Linux](#linux)
 0. [Bash](#bash)
 
-    1. Description
-    0. Setting up a sandbox
-    0. Basic commands
-    0. Navigation
+    1. [Description](#description)
+    0. [Setting up a sandbox](#setting-up-a-sandbox)
+    0. [Basic commands](#basic-commands)
+    0. [Navigation](#navigation)
     0. Variables
     0. Loops
     0. Text editors
@@ -16,7 +16,7 @@
 
 0. [SLURM](#slurm)
 
-    1. Description
+    1. [Description](#description)
     0. Sbatch scripts
     0. Queues
     0. Out and error files
@@ -32,12 +32,10 @@ To use Linux, you need a distribution (shortened to 'distros'). These distros ar
 Although many Linux applications have easy to use graphical user interfaces (GUIs), a savvy Linux user will learn how to do everything within a terminal. A terminal is an access point into a computer that takes and returns text commands. Computing through a terminal is almost always faster than using a GUI and generally offers the user more options and customization than a GUI. The language Linux-based operating systems use in the terminal is called Bash.
 
 ## Bash
-0. Description
-
+0. ##### Description #####
   Bash is a powerful programming language that Linux-based operating systems use to perform tasks. Most of the time user-facing programs will use an easier language to debug like Python or MatLab, but you will need to use Bash to navigate around the terminal and launch jobs.
 
-0. Setting up a sandbox
-
+0. ##### Setting up a sandbox #####
   A sandbox is a safe environment in which to code without being able to break your computer. In our case we will be using CU's Computer Science coding space :
 
   https://coding.csel.io/hub/login
@@ -52,49 +50,47 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
   - For now, click on the black 'Terminal' widget in the bottom row. What you've opened is a Linux terminal emulator that we will use to learn basic Bash commands.
 
-0. Basic commands
-
+0. ##### Basic commands #####
   Commands in bash are entered directly into the command line, generally in the following format:
 
   `<command> --<option> <input>`
 
   The command is then executed when you press enter.
 
-    - The commands are actually executable scripts somewhere in your PATH (usually in your bin folder).
-    - Options or "flags" modify the command in someway, like changing the behavior or explicitly defining some input/output. Most of the time, the long form of the option will have two dashes, as in:
+  - The commands are actually executable scripts somewhere in your PATH (usually in your bin folder).
+  - Options or "flags" modify the command in someway, like changing the behavior or explicitly defining some input/output. Most of the time, the long form of the option will have two dashes, as in:
 
-        `ls --all`
+    `ls --all`
 
     Whereas one letter abbreviations use one dash:
 
-        `ls -a`
+    `ls -a`
 
-    - Inputs are generally file names or a value required by the option defined.
-    - **As a rule of thumb, most programs will return a brief documentation page when ran with the flag "--help":**
+  - Inputs are generally file names or a value required by the option defined.
+  - **As a rule of thumb, most programs will return a brief documentation page when ran with the flag "--help":**
 
-        `ls --help`
+    `ls --help`
 
-    0. **ls** This first command, 'ls' lists the files and directories in your current folder or 'directory' as it's called in Linux. Two common flags to use with ls are '-a' and '-l'.
+      0. **ls** This first command, 'ls' lists the files and directories in your current folder or 'directory' as it's called in Linux. Two common flags to use with ls are '-a' and '-l'.
 
-      - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.'
+        - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.'
 
-      - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
+        - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
 
-    Try `ls -a`. You should be able to see a few hidden files, we'll talk about these in a later tutorial.
+      Try `ls -a`. You should be able to see a few hidden files, we'll talk about these in a later tutorial.
 
-    0. **pwd** The next thing we need to know is where we are, we can figure this out by using the command `pwd`, which prints the working directory and will give an output like: `/home/shawn/`. Here, each backslash represents another layer of the file tree and is know as the 'absolute path'. Try it and see where you are, as we move about later, try it again to keep oriented.
+      0. **pwd** The next thing we need to know is where we are, we can figure this out by using the command `pwd`, which prints the working directory and will give an output like: `/home/shawn/`. Here, each backslash represents another layer of the file tree and is know as the 'absolute path'. Try it and see where you are, as we move about later, try it again to keep oriented.
 
-    0. **touch** There are many ways to make a new file, but the most direct way is simply `touch <filename>`. This command creates an empty file that you can then do things with. Try this command using your own filename and use the extension '.txt' **remember not to `touch` a filename that already exists as it will overwrite it.**
-    0. **mkdir** Similar to touch, we can also make a directory using `mkdir <directory_name>`.
-    0. **cp** One thing you can do with this new file is 'copy' it. This is the first command we've used that requires two arguments: `cp <source_file> <destination_file>`
-      - **In Bash, spaces separate arguments, therefore don't use them in filenames. If you need to specify a filename with a space in it, you will need to wrap it with quotes. Anything inside a set of quotes is treated as a single argument: `'file name with space.txt'`. Use underscores if you need to separate words: `file_name_without_spaces.txt`** Try to copy the file you made, remember to use a new name, otherwise you'll overwrite it.
-      - We can also copy the directory we made by using `cp -r <directory_name>`. The '-r' here stands for 'recursively' or 'go through and copy everything in this directory'.
-    0. **rm** Now that we have two files that are copies of each other, we can delete the original. To do this we'll use the `rm` or 'remove' command, here we need only specify the file to remove:  
-      - `rm <filename>`. Try it.
-      - Now try to remove the copied directory we just made. Bash is smart like this and doesn't want us to remove a directory on accident. To remove an entire directory we will have to do it recursively: `rm -r <directory_name>`
+      0. **touch** There are many ways to make a new file, but the most direct way is simply `touch <filename>`. This command creates an empty file that you can then do things with. Try this command using your own filename and use the extension '.txt' **remember not to `touch` a filename that already exists as it will overwrite it.**
+      0. **mkdir** Similar to touch, we can also make a directory using `mkdir <directory_name>`.
+      0. **cp** One thing you can do with this new file is 'copy' it. This is the first command we've used that requires two arguments: `cp <source_file> <destination_file>`
+        - **In Bash, spaces separate arguments, therefore don't use them in filenames. If you need to specify a filename with a space in it, you will need to wrap it with quotes. Anything inside a set of quotes is treated as a single argument: `'file name with space.txt'`. Use underscores if you need to separate words: `file_name_without_spaces.txt`** Try to copy the file you made, remember to use a new name, otherwise you'll overwrite it.
+        - We can also copy the directory we made by using `cp -r <directory_name>`. The '-r' here stands for 'recursively' or 'go through and copy everything in this directory'.
+      0. **rm** Now that we have two files that are copies of each other, we can delete the original. To do this we'll use the `rm` or 'remove' command, here we need only specify the file to remove:  
+        - `rm <filename>`. Try it.
+        - Now try to remove the copied directory we just made. Bash is smart like this and doesn't want us to remove a directory on accident. To remove an entire directory we will have to do it recursively: `rm -r <directory_name>`
 
-
-0. Navigation
+0. ##### Navigation #####
 
   0. **cd** To navigate from directory to directory, we can use `cd` or 'change directory'.
     - We can move into a deeper directory by `cd <directory name>`
