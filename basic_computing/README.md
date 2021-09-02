@@ -4,25 +4,27 @@
 0. [Linux](#linux)
 0. [Bash](#bash)
 
-    1. [Description](#description)
+    0. [Description](#description)
     0. [Setting up a sandbox](#setting-up-a-sandbox)
     0. [Basic commands](#basic-commands)
     0. [Navigation](#navigation)
-    0. Variables
-    0. Loops
-    0. Text editors
-    0. Running scripts
-    0. Connecting to clusters
+    0. [Piping](#piping)
+    0. [Variables](#variables)
+    0. [Loops](#loops)
+    0. [Text editors](#text-editors)
+    0. [Running scripts](#running-scripts)
+    0. [Connecting to remote computers](#connecting-to-remote-computers)
+    0. [Advanced commands](#advanced-commands)
 
 0. [SLURM](#slurm)
 
-    1. [Description](#description)
-    0. Sbatch scripts
-    0. Queues
-    0. Out and error files
-    0. Starting, stopping, and monitering jobs
-    0. Dependencies
-    0. Best practices
+    0. [Description](#description)
+    0. [Sbatch scripts](#sbatch-scripts)
+    0. [Queues](#queues)
+    0. [Out and error files](#out-and-error-files)
+    0. [Starting, stopping, and monitoring jobs](#starting-stopping-and-monitoring-jobs)
+    0. [Dependencies](#dependencies)
+    0. [Best practices](#best-practices)
 
 ## Linux
 Linux is the kernel on which most high performance computing (HPC) is done. A kernel is the software that allows an operating system to control physical hardware. The Linux kernel is based on UNIX and is open source and free to use by anyone, as its creator Linus Tuvolds started the kernel under a GNU license back in the 90's. Anyone can contribute code to the kernel, as long as it passes a series of revisions and oversight. Because so many people contribute to the code it is constantly being improved.
@@ -73,9 +75,9 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
       0. **ls** This first command, 'ls' lists the files and directories in your current folder or 'directory' as it's called in Linux. Two common flags to use with ls are '-a' and '-l'.
 
-        - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.'
+      - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.'
 
-        - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
+      - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
 
       Try `ls -a`. You should be able to see a few hidden files, we'll talk about these in a later tutorial.
 
@@ -89,15 +91,54 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       0. **rm** Now that we have two files that are copies of each other, we can delete the original. To do this we'll use the `rm` or 'remove' command, here we need only specify the file to remove:  
         - `rm <filename>`. Try it.
         - Now try to remove the copied directory we just made. Bash is smart like this and doesn't want us to remove a directory on accident. To remove an entire directory we will have to do it recursively: `rm -r <directory_name>`
+      0. **cat**
+      0. **head**
+      0. **tail**
+      0. **>>**
 
 0. ##### Navigation #####
+    0. **cd** To navigate from directory to directory, we can use `cd` or 'change directory'.
+      - We can move into a deeper directory by `cd <directory name>`
+      - Up a directory with `cd ..` ('..' represents the parent directory)
+      - The same directory `cd .` ('.' represents your current directory, we'll use it later)
+      - An adjacent directory by specifying a 'relative path' `cd ../jon`
+      - A specific directory by specifying the absolute path `cd /home/jon`
+      - Your home directory with either `cd ~` or simply `cd`
+    0. **mv**
+    0. **tab filling**
 
-  0. **cd** To navigate from directory to directory, we can use `cd` or 'change directory'.
-    - We can move into a deeper directory by `cd <directory name>`
-    - Up a directory with `cd ..` ('..' represents the parent directory)
-    - The same directory `cd .` ('.' represents your current directory, we'll use it later)
-    - An adjacent directory by specifying a 'relative path' `cd ../jon`
-    - A specific directory by specifying the absolute path `cd /home/jon`
-    - Your home directory with either `cd ~` or simply `cd`
-  0. **tab filling**
-  0. **mv**
+0. ##### Piping #####
+
+0. ##### Variables #####
+
+0. ##### Loops #####
+    0. For Loops
+    0. While loops
+
+0. ##### Text editors #####
+    0. Nano
+    0. Vim
+    0. Gedit
+    0. Atom
+
+0. ##### Running scripts #####
+
+0. ##### Connecting to remote computers #####
+    0. ssh
+    0. Putty
+
+0. ##### Advanced commands #####
+    0. **top**
+    0. **crtl+c**
+    0. **rsync**
+    0. **grep**
+    0. **screen**
+
+## Slurm
+  0. ##### Description #####
+  0. ##### Sbatch scripts #####
+  0. ##### Queues #####
+  0. ##### Out and error files #####
+  0. ##### Starting, stopping, and monitoring jobs #####
+  0. ##### Dependencies #####
+  0. ##### Best practices #####
