@@ -9,6 +9,7 @@
     0. [Basic commands](#basic-commands)
     0. [Navigation](#navigation)
     0. [Variables](#variables)
+    0. [Arrays](#arrays)
     0. [Loops](#loops)
     0. [Text editors](#text-editors)
     0. [Running scripts](#running-scripts)
@@ -121,12 +122,18 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     -rwxrwxr-- 1 shla9937 lugerlab 0 Sep  3 16:48 group.txt
     -rwxrwxrwx 1 shla9937 lugerlab 0 Sep  3 16:48 other.txt
 
-    
+
 
 0. ##### Variables #####
+Variables can be defined in bash using the syntax: `<varibale_name>=<variable_value>`.
+You can then call the variable using `$<variable_name>`.
+And clear its value with `unset <variable_name>`.
+
+0. ##### Arrays #####
 
 0. ##### Loops #####
-    0. For Loops
+    0. *For Loops* Now that you can use variables you can
+    0. *if statements*
     0. While loops
 
 0. ##### Text editors #####
