@@ -8,7 +8,6 @@
     0. [Setting up a sandbox](#setting-up-a-sandbox)
     0. [Basic commands](#basic-commands)
     0. [Navigation](#navigation)
-    0. [Piping](#piping)
     0. [Variables](#variables)
     0. [Loops](#loops)
     0. [Text editors](#text-editors)
@@ -83,7 +82,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
       0. **pwd** The next thing we need to know is where we are, we can figure this out by using the command `pwd`, which prints the working directory and will give an output like: `/home/shawn/`. Here, each backslash represents another layer of the file tree and is know as the 'absolute path'. Try it and see where you are, as we move about later, try it again to keep oriented.
 
-      0. **echo**
+      0. **echo** If you simply want to return some text or the value of a variable, you can use `echo <word, phrase or variable>`. Try to return the phrase 'Hello world'.
 
       0. **touch** There are many ways to make a new file, but the most direct way is simply `touch <filename>`. This command creates an empty file that you can then do things with. Try this command using your own filename and use the extension '.txt' **remember not to `touch` a filename that already exists as it will overwrite it.**
       0. **mkdir** Similar to touch, we can also make a directory using `mkdir <directory_name>`.
@@ -93,10 +92,12 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       0. **rm** Now that we have two files that are copies of each other, we can delete the original. To do this we'll use the `rm` or 'remove' command, here we need only specify the file to remove:  
         - `rm <filename>`. Try it.
         - Now try to remove the copied directory we just made. Bash is smart like this and doesn't want us to remove a directory on accident. To remove an entire directory we will have to do it recursively: `rm -r <directory_name>`
-      0. **cat**
-      0. **head**
-      0. **tail**
-      0. **>>**
+      0. **>** To 'direct' the output of a function into a file, we can use `<some_function> > <filename>`. **Be careful, as this function will overwrite whatever is in a file.** Try using the `echo` function to write a phrase into a .txt file.
+      0. **cat** To figure out if we successful in writing to the file, we can use `cat <filename>`. It is a quick way to read all the contents of file. The caveat here is that it will read ALL the contents, no matter how long.
+      0. **head** This is where `head -n <#> <filename>` comes in handy. It will only read the first number of lines specified with `-n` (if you don't use the n flag, it will read 20 lines).
+      0. **tail** Tail is the opposite of head; it reads the last number of lines you specify `tail -n <#> <filename>`.
+      0. **>>** If you'd like to add something to the end of file you can use the double carrot `echo <phrase> >> <filename>`
+      0. **|** Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it to the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
 
 0. ##### Navigation #####
     0. **cd** To navigate from directory to directory, we can use `cd` or 'change directory'.
@@ -110,8 +111,6 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     0. Tab filling
     0. Home directory
     0. Permissions
-
-0. ##### Piping #####
 
 0. ##### Variables #####
 
@@ -138,6 +137,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     0. **crtl+c**
     0. **history**
     0. **clear**
+    0. **\***
     0. **rsync**
     0. **grep**
     0. **screen**
