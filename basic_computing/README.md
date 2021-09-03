@@ -107,10 +107,21 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       - An adjacent directory by specifying a 'relative path' `cd ../jon`
       - A specific directory by specifying the absolute path `cd /home/jon`
       - Your home directory with either `cd ~` or simply `cd`
-    0. **mv**
-    0. Tab filling
-    0. Home directory
-    0. Permissions
+    0. **mv** Similar to, and much faster than the `cp` function, we can use `mv <source_file> <destination_file>` to move a file from one location to another. Because you are not actually copying and remove the file, simply changing its location information, this function is often instant.
+
+    Another use of this function is to rename files (because that is essentially what you are doing). To do this simply `mv <old_name> <new_name>`, you can also move and rename entire directories.
+    0. *Tab filling.* One of the biggest timesavers in coding is using the tab key to autofill a function in your path or the name of a file/directory after you have typed the first few characters.
+
+    Tabbing twice will give you a list of all files or directories in your current directory.
+    0. *Home directory.* You home directory is usually where you will start a terminal session and contains all of the personal files necessary for you to work, including hidden files and programs. Usually your home directory is stored on a smaller, faster drive and not meant for the storage of large datasets.
+    0. *Permissions.* All files and folders on a computer have a set of permissions, which you can view using `ls -l`. There are three levels of permissions: user, group, and other. And three types of permission in each level: read(r), write(w) and execute(x). These are denoted by sets of 3 letters per level.
+
+
+    -rwx------ 1 shla9937 lugerlab 0 Sep  3 16:48 user.txt
+    -rwxrwxr-- 1 shla9937 lugerlab 0 Sep  3 16:48 group.txt
+    -rwxrwxrwx 1 shla9937 lugerlab 0 Sep  3 16:48 other.txt
+
+    
 
 0. ##### Variables #####
 
