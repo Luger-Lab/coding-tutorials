@@ -96,7 +96,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
           jovyan@jupyter-shla9937:~$ pwd
           /home/jovyan
           ```
-      Here, each backslash represents another layer of the file tree and is know as the 'absolute path'. Try it and see where you are, as we move about later, try it again to keep oriented.
+          Here, each backslash represents another layer of the file tree and is know as the 'absolute path'. Try it and see where you are, as we move about later, try it again to keep oriented.
 
       0. **echo** If you simply want to return some text or the value of a variable, you can use `echo <word, phrase or variable>`. Try to return the phrase 'Hello world'.
           ```
