@@ -163,6 +163,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
 0. ##### Arrays #####
     Lists in many programming languages are called 'arrays' in Bash. Simply put and array is an ordered list of values (numbers, strings, ect.) that you can iterate through.
+    
         0. Make an empty array `<array_name> = ()`
         0. Make a filled array `<array_name> = (<value0> <value1> <value2>)`
         0. Return first value `${<array_name>}` (use echo to print the output)
@@ -178,6 +179,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
 0. ##### Loops #####
     Now that you can use variables and arrays, you can use loops to iterate through those arrays and perform functions.
+
     0. *For Loops.* A 'for loop' will iterate through all the elements of an array and perform the same function, as in 'for each element, do this' and that is actually how the syntax works in bash.
         - First, declare the for loop, variable to be iterated, and iterable element through which to iterate and add `; do`:
             ```
