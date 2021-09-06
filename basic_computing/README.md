@@ -40,103 +40,99 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 0. ##### Setting up a sandbox #####
   A sandbox is a safe environment in which to code without being able to break your computer. In our case we will be using CU's Computer Science coding space :
 
-  https://coding.csel.io/hub/login
+      https://coding.csel.io/hub/login
 
-  - All you need to do is sign in with your CU credentials.
-
-  - Once logged in click on the 'Default Coding Environment' widget (we'll discuss how this service actually works in a later tutorial).
-
-  - You can bookmark this site for later use.
-
-  In this code space, you'll see a file tree on the left side and a series of widgets on the right, we'll discuss how to use a few of these over the course of this series.
-
-  - For now, click on the black 'Terminal' widget in the bottom row. What you've opened is a Linux terminal emulator that we will use to learn basic Bash commands.
+      - All you need to do is sign in with your CU credentials.
+      - Once logged in click on the 'Default Coding Environment' widget (we'll discuss how this service actually works in a later tutorial).
+      - You can bookmark this site for later use.
+      In this code space, you'll see a file tree on the left side and a series of widgets on the right, we'll discuss how to use a few of these over the course of this series.
+      - For now, click on the black 'Terminal' widget in the bottom row. What you've opened is a Linux terminal emulator that we will use to learn basic Bash commands.
 
 0. ##### Basic commands #####
   Commands in bash are entered directly into the command line, generally in the following format:
 
-  `<command> --<option> <input>`
+      `<command> --<option> <input>`
 
-  The command is then executed when you press enter.
+      The command is then executed when you press enter.
 
-  - The commands are actually executable scripts somewhere in your PATH (usually in your bin folder).
-  - Options or "flags" modify the command in someway, like changing the behavior or explicitly defining some input/output. Most of the time, the long form of the option will have two dashes, as in:
+      - The commands are actually executable scripts somewhere in your PATH (usually in your bin folder).
+      - Options or "flags" modify the command in someway, like changing the behavior or explicitly defining some input/output. Most of the time, the long form of the option will have two dashes, as in:
 
-    `ls --all`
+          `ls --all`
 
-    Whereas one letter abbreviations use one dash:
+          Whereas one letter abbreviations use one dash:
 
-    `ls -a`
+          `ls -a`
 
-  - Inputs are generally file names or a value required by the option defined.
-  - **As a rule of thumb, most programs will return a brief documentation page when ran with the flag "--help":**
+      - Inputs are generally file names or a value required by the option defined.
+      - **As a rule of thumb, most programs will return a brief documentation page when ran with the flag "--help":**
 
-    `ls --help`
+          `ls --help`
 
       0. **ls** This first command, 'ls' lists the files and directories in your current folder or 'directory' as it's called in Linux. Two common flags to use with ls are '-a' and '-l'.
           ```
           jovyan@jupyter-shla9937:~$ ls
           cs_class
-          ```
-      - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.', we'll talk about these in a later tutorial.
-```
-jovyan@jupyter-shla9937:~$ ls -a
-.   .bash_history            .bashrc  .conda    .config   .empty      .ipynb_checkpoints  .jupyter  .python_history
-..  .bash_history-00035.tmp  .cache   .condarc  cs_class  .gitconfig  .ipython            .local    .wget-hsts
-```
+          ```  
+          - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.', we'll talk about these in a later tutorial.
+              ```
+              jovyan@jupyter-shla9937:~$ ls -a
+              .   .bash_history            .bashrc  .conda    .config   .empty      .ipynb_checkpoints  .jupyter  .python_history
+              ..  .bash_history-00035.tmp  .cache   .condarc  cs_class  .gitconfig  .ipython            .local    .wget-hsts
+              ```
+          - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
+              ```
+              jovyan@jupyter-shla9937:~$ ls -l
+              total 4
+              drwxr-sr-x 11 jovyan users 4096 Aug 26 17:49 cs_class
+              ```
 
-      - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
-```
-jovyan@jupyter-shla9937:~$ ls -l
-total 4
-drwxr-sr-x 11 jovyan users 4096 Aug 26 17:49 cs_class
-```
       0. **pwd** The next thing we need to know is where we are, we can figure this out by using the command `pwd`, which prints the working directory and will give an output like:
-```
-jovyan@jupyter-shla9937:~$ pwd
-/home/jovyan
-```
+          ```
+          jovyan@jupyter-shla9937:~$ pwd
+          /home/jovyan
+          ```
       Here, each backslash represents another layer of the file tree and is know as the 'absolute path'. Try it and see where you are, as we move about later, try it again to keep oriented.
 
       0. **echo** If you simply want to return some text or the value of a variable, you can use `echo <word, phrase or variable>`. Try to return the phrase 'Hello world'.
-```
-jovyan@jupyter-shla9937:~$ echo Hello world.
-Hello world.
-```
+          ```
+          jovyan@jupyter-shla9937:~$ echo Hello world.
+          Hello world.
+          ```
       0. **touch** There are many ways to make a new file, but the most direct way is simply `touch <filename>`. This command creates an empty file that you can then do things with. Try this command using your own filename and use the extension '.txt' **remember not to `touch` a filename that already exists as it will overwrite it.**
-```
-jovyan@jupyter-shla9937:~$ touch dummy.txt
-jovyan@jupyter-shla9937:~$
-```
+          ```
+          jovyan@jupyter-shla9937:~$ touch dummy.txt
+          jovyan@jupyter-shla9937:~$
+          ```
       0. **mkdir** Similar to touch, we can also make a directory using `mkdir <directory_name>`.
-```
-jovyan@jupyter-shla9937:~$ mkdir new_directory
-jovyan@jupyter-shla9937:~$
-```
+          ```
+          jovyan@jupyter-shla9937:~$ mkdir new_directory
+          jovyan@jupyter-shla9937:~$
+          ```
       0. **cp** One thing you can do with this new file is 'copy' it. This is the first command we've used that requires two arguments: `cp <source_file> <destination_file>`
-```
-jovyan@jupyter-shla9937:~$ cp dummy.txt copy_of_dummy.txt
-jovyan@jupyter-shla9937:~$
-```
-        - **In Bash, spaces separate arguments, therefore don't use them in filenames. If you need to specify a filename with a space in it, you will need to wrap it with quotes. Anything inside a set of quotes is treated as a single argument: `'file name with space.txt'`. Use underscores if you need to separate words: `file_name_without_spaces.txt`** Try to copy the file you made, remember to use a new name, otherwise you'll overwrite it.
-        - We can also copy the directory we made by using `cp -r <directory_name> <new_name>`. The '-r' here stands for 'recursively' or 'go through and copy everything in this directory'.
+          ```
+          jovyan@jupyter-shla9937:~$ cp dummy.txt copy_of_dummy.txt
+          jovyan@jupyter-shla9937:~$
+          ```
+          - **In Bash, spaces separate arguments, therefore don't use them in filenames. If you need to specify a filename with a space in it, you will need to wrap it with quotes. Anything inside a set of quotes is treated as a single argument: `'file name with space.txt'`. Use underscores if you need to separate words: `file_name_without_spaces.txt`** Try to copy the file you made, remember to use a new name, otherwise you'll overwrite it.
+          - We can also copy the directory we made by using `cp -r <directory_name> <new_name>`. The '-r' here stands for 'recursively' or 'go through and copy everything in this directory'.
       0. **rm** Now that we have two files that are copies of each other, we can delete the original. To do this we'll use the `rm` or 'remove' command, here we need only specify the file to remove:  
-        - `rm <filename>`. Try it.
-        - Now try to remove the copied directory we just made. Bash is smart like this and doesn't want us to remove a directory on accident. To remove an entire directory we will have to do it recursively: `rm -r <directory_name>`
+          - `rm <filename>`. Try it.
+          - Now try to remove the copied directory we just made. Bash is smart like this and doesn't want us to remove a directory on accident. To remove an entire directory we will have to do it recursively: `rm -r <directory_name>`
       0. *Direct.* To 'direct' the output of a function into a file, we can use `<some_function> > <filename>`. **Be careful, as this function will overwrite whatever is in a file.** Try using the `echo` function to write a phrase into a .txt file.
       0. **cat** To figure out if we successful in writing to the file, we can use `cat <filename>`. It is a quick way to read all the contents of file. The caveat here is that it will read ALL the contents, no matter how long.
-```
-jovyan@jupyter-shla9937:~$ cat dummy.txt
-This is a file called dummy.
-```
+          ```
+          jovyan@jupyter-shla9937:~$ cat dummy.txt
+          This is a file called dummy.
+          ```
       0. **head** This is where `head -n <#> <filename>` comes in handy. It will only read the first number of lines specified with `-n` (if you don't use the n flag, it will read 20 lines).
-```
-jovyan@jupyter-shla9937:~$ head -n 4 dummy.txt
-This is a file called dummy.
-line2
-line3
-line4
-```
+          ```
+          jovyan@jupyter-shla9937:~$ head -n 4 dummy.txt
+          This is a file called dummy.
+          line2
+          line3
+          line4
+          ```
       0. **tail** Tail is the opposite of head; it reads the last number of lines you specify `tail -n <#> <filename>`.
       0. *Append.* If you'd like to add something to the end of file you can use the double carrot `echo <phrase> >> <filename>`
       0. *Pipe.* Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it to the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
@@ -159,12 +155,11 @@ line4
         - the tilde `cd ~`
         - an empty cd `cd `
     0. *Permissions.* All files and folders on a computer have a set of permissions, which you can view using `ls -l`. There are three levels of permissions: user, group, and other. And three types of permission in each level: read(r), write(w) and execute(x). These are denoted by sets of 3 letters per level.
-```
-      -rwx------ 1 shla9937 lugerlab 0 Sep  3 16:48 user.txt
-      -rwxrwxr-- 1 shla9937 lugerlab 0 Sep  3 16:48 group.txt
-      -rwxrwxrwx 1 shla9937 lugerlab 0 Sep  3 16:48 other.txt
-```
-
+        ```
+        -rwx------ 1 shla9937 lugerlab 0 Sep  3 16:48 user.txt
+        -rwxrwxr-- 1 shla9937 lugerlab 0 Sep  3 16:48 group.txt
+        -rwxrwxrwx 1 shla9937 lugerlab 0 Sep  3 16:48 other.txt
+        ```
 
 0. ##### Variables #####
 Variables can be defined in bash using the syntax: `<varibale_name>=<variable_value>`.
