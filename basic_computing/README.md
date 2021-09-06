@@ -93,30 +93,28 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       0. **rm** Now that we have two files that are copies of each other, we can delete the original. To do this we'll use the `rm` or 'remove' command, here we need only specify the file to remove:  
         - `rm <filename>`. Try it.
         - Now try to remove the copied directory we just made. Bash is smart like this and doesn't want us to remove a directory on accident. To remove an entire directory we will have to do it recursively: `rm -r <directory_name>`
-      0. *direct.* To 'direct' the output of a function into a file, we can use `<some_function> > <filename>`. **Be careful, as this function will overwrite whatever is in a file.** Try using the `echo` function to write a phrase into a .txt file.
+      0. *Direct.* To 'direct' the output of a function into a file, we can use `<some_function> > <filename>`. **Be careful, as this function will overwrite whatever is in a file.** Try using the `echo` function to write a phrase into a .txt file.
       0. **cat** To figure out if we successful in writing to the file, we can use `cat <filename>`. It is a quick way to read all the contents of file. The caveat here is that it will read ALL the contents, no matter how long.
       0. **head** This is where `head -n <#> <filename>` comes in handy. It will only read the first number of lines specified with `-n` (if you don't use the n flag, it will read 20 lines).
       0. **tail** Tail is the opposite of head; it reads the last number of lines you specify `tail -n <#> <filename>`.
-      0. *append.* If you'd like to add something to the end of file you can use the double carrot `echo <phrase> >> <filename>`
-      0. *pipe.* Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it to the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
+      0. *Append.* If you'd like to add something to the end of file you can use the double carrot `echo <phrase> >> <filename>`
+      0. *Pipe.* Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it to the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
 
 0. ##### Navigation #####
     0. **cd** To navigate from directory to directory, we can use `cd` or 'change directory'.
-      - We can move into a deeper directory by `cd <directory name>`
-      - Up a directory with `cd ..` ('..' represents the parent directory)
-      - The same directory `cd .` ('.' represents your current directory, we'll use it later)
-      - An adjacent directory by specifying a 'relative path' `cd ../jon`
-      - A specific directory by specifying the absolute path `cd /home/jon`
-      - Your home directory with either `cd ~` or simply `cd`
+        - We can move into a deeper directory by `cd <directory name>`
+        - Up a directory with `cd ..` ('..' represents the parent directory)
+        - The same directory `cd .` ('.' represents your current directory, we'll use it later)
+        - An adjacent directory by specifying a 'relative path' `cd ../jon`
+        - A specific directory by specifying the absolute path `cd /home/jon`
+        - Your home directory with either `cd ~` or simply `cd`
     0. **mv** Similar to, and much faster than the `cp` function, we can use `mv <source_file> <destination_file>` to move a file from one location to another. Because you are not actually copying and remove the file, simply changing its location information, this function is often instant.
     Another use of this function is to rename files (because that is essentially what you are doing). To do this simply `mv <old_name> <new_name>`, you can also move and rename entire directories.
     0. *Tab filling.* One of the biggest timesavers in coding is using the tab key to autofill a function in your path or the name of a file/directory after you have typed the first few characters.
-
     Tabbing twice will give you a list of all files or directories in your current directory.
     0. *Home directory.* You home directory is usually where you will start a terminal session and contains all of the personal files necessary for you to work, including hidden files and programs. Usually your home directory is stored on a smaller, faster drive and not meant for the storage of large datasets.
     0. *Permissions.* All files and folders on a computer have a set of permissions, which you can view using `ls -l`. There are three levels of permissions: user, group, and other. And three types of permission in each level: read(r), write(w) and execute(x). These are denoted by sets of 3 letters per level.
-
-
+    
 
     -rwx------ 1 shla9937 lugerlab 0 Sep  3 16:48 user.txt
     -rwxrwxr-- 1 shla9937 lugerlab 0 Sep  3 16:48 group.txt
