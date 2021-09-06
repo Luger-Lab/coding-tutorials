@@ -157,24 +157,24 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
         ```
 
 0. ##### Variables #####
-Variables can be defined in bash using the syntax: `<varibale_name>=<variable_value>`.
-You can then call the variable using `$<variable_name>`.
-And clear its value with `unset <variable_name>`. Try setting up a variable and calling its value with the `echo` command.
+    Variables can be defined in bash using the syntax: `<varibale_name>=<variable_value>`.
+    You can then call the variable using `$<variable_name>`.
+    And clear its value with `unset <variable_name>`. Try setting up a variable and calling its value with the `echo` command.
 
 0. ##### Arrays #####
-Lists in many programming languages are called 'arrays' in Bash. Simply put and array is an ordered list of values (numbers, strings, ect.) that you can iterate through.
-    0. Make an empty array `<array_name> = ()`
-    0. Make a filled array `<array_name> = (<value0> <value1> <value2>)`
-    0. Return first value `${<array_name>}` (use echo to print the output)
-    0. Return specific value `${<array_name>[i]}` where i is the index (or position) of the value in the list, remember arrays start indexing at 0.
-    0. Return all values `${<array_name>[@]}`
-        ```
-        jovyan@jupyter-shla9937:~$ echo ${array1[@]}
-        0 1 2 3 4 5
-        ```
-    0. Return array size `${#<array_name>[@]}`
-    0. Change value of first element `<array_name>[0]=<new_value>`
-    0. Append value to list `<array_name>+=(<value>)`
+    Lists in many programming languages are called 'arrays' in Bash. Simply put and array is an ordered list of values (numbers, strings, ect.) that you can iterate through.
+        0. Make an empty array `<array_name> = ()`
+        0. Make a filled array `<array_name> = (<value0> <value1> <value2>)`
+        0. Return first value `${<array_name>}` (use echo to print the output)
+        0. Return specific value `${<array_name>[i]}` where i is the index (or position) of the value in the list, remember arrays start indexing at 0.
+        0. Return all values `${<array_name>[@]}`
+            ```
+            jovyan@jupyter-shla9937:~$ echo ${array1[@]}
+            0 1 2 3 4 5
+            ```
+        0. Return array size `${#<array_name>[@]}`
+        0. Change value of first element `<array_name>[0]=<new_value>`
+        0. Append value to list `<array_name>+=(<value>)`
 
 0. ##### Loops #####
     Now that you can use variables and arrays, you can use loops to iterate through those arrays and perform functions.
