@@ -163,6 +163,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
 0. ##### Arrays #####
     Lists in many programming languages are called 'arrays' in Bash. Simply put and array is an ordered list of values (numbers, strings, ect.) that you can iterate through.
+
     0. Make an empty array `<array_name> = ()`
     0. Make a filled array `<array_name> = (<value0> <value1> <value2>)`
     0. Return first value `${<array_name>}` (use echo to print the output)
