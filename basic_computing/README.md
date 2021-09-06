@@ -158,8 +158,12 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
 0. ##### Variables #####
     Variables can be defined in bash using the syntax: `<varibale_name>=<variable_value>`.
+
     You can then call the variable using `$<variable_name>`.
-    And clear its value with `unset <variable_name>`. Try setting up a variable and calling its value with the `echo` command.
+
+    And clear its value with `unset <variable_name>`.
+
+    Try setting up a variable and calling its value with the `echo` command.
 
 0. ##### Arrays #####
     Lists in many programming languages are called 'arrays' in Bash. Simply put and array is an ordered list of values (numbers, strings, ect.) that you can iterate through.
@@ -193,7 +197,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
             ```
             > done
             ```
-        Here's an example of a for loop that looks at all the elements in an array and prints one each round:
+        - Here's an example of a for loop that looks at all the elements in an array and prints one each round:
             ```
             jovyan@jupyter-shla9937:~$ for i in ${array1[@]}; do
             > echo ${array1[i]}
