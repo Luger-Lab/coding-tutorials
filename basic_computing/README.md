@@ -70,27 +70,22 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
           `ls --help`
 
       0. **ls** This first command, 'ls' lists the files and directories in your current folder or 'directory' as it's called in Linux. Two common flags to use with ls are '-a' and '-l'.
-
           ```
           jovyan@jupyter-shla9937:~$ ls
           cs_class
           ```  
-
           - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.', we'll talk about these in a later tutorial.
-
               ```
               jovyan@jupyter-shla9937:~$ ls -a
               .   .bash_history            .bashrc  .conda    .config   .empty      .ipynb_checkpoints  .jupyter  .python_history
               ..  .bash_history-00035.tmp  .cache   .condarc  cs_class  .gitconfig  .ipython            .local    .wget-hsts
               ```
-
           - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
               ```
               jovyan@jupyter-shla9937:~$ ls -l
               total 4
               drwxr-sr-x 11 jovyan users 4096 Aug 26 17:49 cs_class
               ```
-
       0. **pwd** The next thing we need to know is where we are, we can figure this out by using the command `pwd`, which prints the working directory and will give an output like:
           ```
           jovyan@jupyter-shla9937:~$ pwd
