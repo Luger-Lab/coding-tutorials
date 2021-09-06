@@ -43,9 +43,12 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       https://coding.csel.io/hub/login
 
       - All you need to do is sign in with your CU credentials.
+
       - Once logged in click on the 'Default Coding Environment' widget (we'll discuss how this service actually works in a later tutorial).
       - You can bookmark this site for later use.
+
       In this code space, you'll see a file tree on the left side and a series of widgets on the right, we'll discuss how to use a few of these over the course of this series.
+      
       - For now, click on the black 'Terminal' widget in the bottom row. What you've opened is a Linux terminal emulator that we will use to learn basic Bash commands.
 
 0. ##### Basic commands #####
@@ -83,7 +86,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
               .   .bash_history            .bashrc  .conda    .config   .empty      .ipynb_checkpoints  .jupyter  .python_history
               ..  .bash_history-00035.tmp  .cache   .condarc  cs_class  .gitconfig  .ipython            .local    .wget-hsts
               ```
-              
+
           - `ls -l` will return the 'long' version of a file name, including permissions, owner, size, and date created.
               ```
               jovyan@jupyter-shla9937:~$ ls -l
