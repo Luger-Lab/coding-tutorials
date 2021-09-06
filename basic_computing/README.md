@@ -74,11 +74,10 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     `ls --help`
 
       0. **ls** This first command, 'ls' lists the files and directories in your current folder or 'directory' as it's called in Linux. Two common flags to use with ls are '-a' and '-l'.
-```
-jovyan@jupyter-shla9937:~$ ls
-cs_class
-```
-
+          ```
+          jovyan@jupyter-shla9937:~$ ls
+          cs_class
+          ```
       - `ls -a` returns 'all' the files and directories in a give directory, including hidden ones, whose names start with a '.', we'll talk about these in a later tutorial.
 ```
 jovyan@jupyter-shla9937:~$ ls -a
