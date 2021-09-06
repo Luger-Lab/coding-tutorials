@@ -51,18 +51,18 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 0. ##### Basic commands #####
   Commands in bash are entered directly into the command line, generally in the following format:
 
-      `<command> --<option> <input>`
+  `<command> --<option> <input>`
 
-      The command is then executed when you press enter.
+  The command is then executed when you press enter.
 
-      - The commands are actually executable scripts somewhere in your PATH (usually in your bin folder).
-      - Options or "flags" modify the command in someway, like changing the behavior or explicitly defining some input/output. Most of the time, the long form of the option will have two dashes, as in:
+  - The commands are actually executable scripts somewhere in your PATH (usually in your bin folder).
+  - Options or "flags" modify the command in someway, like changing the behavior or explicitly defining some input/output. Most of the time, the long form of the option will have two dashes, as in:
 
-          `ls --all`
+      `ls --all`
 
-          Whereas one letter abbreviations use one dash:
+      Whereas one letter abbreviations use one dash:
 
-          `ls -a`
+      `ls -a`
 
       - Inputs are generally file names or a value required by the option defined.
       - **As a rule of thumb, most programs will return a brief documentation page when ran with the flag "--help":**
