@@ -98,7 +98,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       0. **head** This is where `head -n <#> <filename>` comes in handy. It will only read the first number of lines specified with `-n` (if you don't use the n flag, it will read 20 lines).
       0. **tail** Tail is the opposite of head; it reads the last number of lines you specify `tail -n <#> <filename>`.
       0. **>>** If you'd like to add something to the end of file you can use the double carrot `echo <phrase> >> <filename>`
-      0. **|** Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it to the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
+      0. **\|** Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it to the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
 
 0. ##### Navigation #####
     0. **cd** To navigate from directory to directory, we can use `cd` or 'change directory'.
