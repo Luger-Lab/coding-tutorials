@@ -114,11 +114,11 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     Tabbing twice will give you a list of all files or directories in your current directory.
     0. *Home directory.* You home directory is usually where you will start a terminal session and contains all of the personal files necessary for you to work, including hidden files and programs. Usually your home directory is stored on a smaller, faster drive and not meant for the storage of large datasets.
     0. *Permissions.* All files and folders on a computer have a set of permissions, which you can view using `ls -l`. There are three levels of permissions: user, group, and other. And three types of permission in each level: read(r), write(w) and execute(x). These are denoted by sets of 3 letters per level.
-    
 
-    -rwx------ 1 shla9937 lugerlab 0 Sep  3 16:48 user.txt
-    -rwxrwxr-- 1 shla9937 lugerlab 0 Sep  3 16:48 group.txt
-    -rwxrwxrwx 1 shla9937 lugerlab 0 Sep  3 16:48 other.txt
+
+        -rwx------ 1 shla9937 lugerlab 0 Sep  3 16:48 user.txt
+        -rwxrwxr-- 1 shla9937 lugerlab 0 Sep  3 16:48 group.txt
+        -rwxrwxrwx 1 shla9937 lugerlab 0 Sep  3 16:48 other.txt
 
 
 
