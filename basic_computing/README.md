@@ -134,7 +134,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
           ```
       0. **tail** Tail is the opposite of head; it reads the last number of lines you specify `tail -n <#> <filename>`.
       0. *Append.* If you'd like to add something to the end of file you can use the double carrot `echo <phrase> >> <filename>`
-      0. *Pipe.* Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it to the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
+      0. *Pipe.* Finally, to put multiple functions together, use the `|`. This function takes the output from the previous function and inputs it into the next one. This is called piping. Try something like `mkdir <directory_name> | cd <directory_name> | touch <new_file | echo <phrase> > <new_file> | cat <new_file> `.
 
 0. ##### Navigation #####
     0. **cd** To navigate from directory to directory, we can use `cd` or 'change directory'.
@@ -148,11 +148,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     Another use of this function is to rename files (because that is essentially what you are doing). To do this simply `mv <old_name> <new_name>`, you can also move and rename entire directories.
     0. *Tab filling.* One of the biggest timesavers in coding is using the tab key to autofill a function in your path or the name of a file/directory after you have typed the first few characters.
     Tabbing twice will give you a list of all files or directories in your current directory.
-    0. *Home directory.* You home directory is usually where you will start a terminal session and contains all of the personal files necessary for you to work, including hidden files and programs. Usually your home directory is stored on a smaller, faster drive and not meant for the storage of large datasets. You can get to your home directory by using:
-        - the absolute path `/home/shawn`
-        - relative path eg. `../../shawn`
-        - the tilde `cd ~`
-        - an empty cd `cd `
+    0. *Home directory.* You home directory is usually where you will start a terminal session and contains all of the personal files necessary for you to work, including hidden files and programs. Usually your home directory is stored on a smaller, faster drive and not meant for the storage of large datasets.
     0. *Permissions.* All files and folders on a computer have a set of permissions, which you can view using `ls -l`. There are three levels of permissions: user, group, and other. And three types of permission in each level: read(r), write(w) and execute(x). These are denoted by sets of 3 letters per level.
         ```
         -rwx------ 1 shla9937 lugerlab 0 Sep  3 16:48 user.txt
@@ -163,14 +159,52 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 0. ##### Variables #####
 Variables can be defined in bash using the syntax: `<varibale_name>=<variable_value>`.
 You can then call the variable using `$<variable_name>`.
-And clear its value with `unset <variable_name>`.
+And clear its value with `unset <variable_name>`. Try setting up a variable and calling its value with the `echo` command.
 
 0. ##### Arrays #####
+Lists in many programming languages are called 'arrays' in Bash. Simply put and array is an ordered list of values (numbers, strings, ect.) that you can iterate through.
+    0. Make an empty array `<array_name> = ()`
+    0. Make a filled array `<array_name> = (<value0> <value1> <value2>)`
+    0. Return first value `${<array_name>}` (use echo to print the output)
+    0. Return specific value `${<array_name>[i]}` where i is the index (or position) of the value in the list, remember arrays start indexing at 0.
+    0. Return all values `${<array_name>[@]}`
+        ```
+        jovyan@jupyter-shla9937:~$ echo ${array1[@]}
+        0 1 2 3 4 5
+        ```
+    0. Return array size `${#<array_name>[@]}`
+    0. Change value of first element `<array_name>[0]=<new_value>`
+    0. Append value to list `<array_name>+=(<value>)`
 
 0. ##### Loops #####
-    0. *For Loops* Now that you can use variables you can
-    0. *if statements*
-    0. While loops
+    Now that you can use variables and arrays, you can use loops to iterate through those arrays and perform functions.
+    0. *For Loops.* A 'for loop' will iterate through all the elements of an array and perform the same function, as in 'for each element, do this' and that is actually how the syntax works in bash.
+        - First, declare the for loop, variable to be iterated, and iterable element through which to iterate and add `; do`:
+            ```
+            for i in ${array1[@]}; do
+            ```
+        - Next, tell the loop what to do with each iteration:
+            ```
+            > echo ${array1[i]}
+            ```
+        - You can add another function or declare the end of the loop and tell Bash to execute it:
+            ```
+            > done
+            ```
+        Here's an example of a for loop that looks at all the elements in an array and prints one each round:
+            ```
+            jovyan@jupyter-shla9937:~$ for i in ${array1[@]}; do
+            > echo ${array1[i]}
+            > done
+            0
+            1
+            2
+            3
+            4
+            5
+            ```
+    0. *if statements.*
+    0. *While loops.*
 
 0. ##### Text editors #####
     0. Nano
