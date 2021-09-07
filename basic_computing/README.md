@@ -27,7 +27,7 @@
     0. [Best practices](#best-practices)
 
 ## Linux
-Linux is the kernel on which most high performance computing (HPC) is done. A kernel is the software that allows an operating system to control physical hardware. The Linux kernel is based on UNIX and is open source and free to use by anyone, as its creator Linus Tuvolds started the kernel under a GNU license back in the 90's. Anyone can contribute code to the kernel, as long as it passes a series of revisions and oversight. Because so many people contribute to the code it is constantly being improved.
+Linux is the kernel on which most high performance computing (HPC) is done. A kernel is the software that allows an operating system to control physical hardware. The Linux kernel is based on UNIX and is open source and free to use by anyone, as its creator [Linus Tuvolds](https://en.wikipedia.org/wiki/Linus_Torvalds) started the kernel under a GNU license back in the early 90's. Anyone can contribute code to the kernel, as long as it passes a series of revisions and oversight. Because so many people contribute to the code it is constantly being improved.
 
 To use Linux, you need a distribution (shortened to 'distros'). These distros are tantamount to operating systems (think Windows or MacOS). There are many to choose from: free ones like Ubuntu or Tux and enterprise ones like RedHat and CentOS. Whichever distro you choose, they will all act the same under the hood, even if the desktop appearance is different, because they all operate using the same kernel.
 
@@ -206,21 +206,45 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
             4
             5
             ```
-    0. *if statements.*
-    0. *While loops.*
+    0. *if statements.* If statements are a powerful tool that allow you to execute commands only if a specific condition has been met. There are three possible conditions in an if statement:
+        - `if` runs a command if the condition is satisfied.
+        - `else` runs a command if none of the previous conditions are met.
+        - `elif` runs a command if the previous if's conditions are unsatisfied and the condition set forth by the elif is satisfied.
+        - the basic syntax for an if statement in bash is:
+            ```
+            if [ <condition> ]
+            then
+              <command>
+            elif
+              <elif_command>
+            else
+              <else_command>
+            fi
+            ```
+        - the `fi` denotes the end of the statement (it is simply if backwards)
+        - if statements are often placed inside loops and can trigger them to end at certain times.
+    0. *While loops.* A while loop runs a command over and over until some condition is not met. It's kind of like putting an if statement inside of for loop that ends when a condition becomes false.
+        - The basic syntax is:
+            ```
+            while [ <condition> ]
+            do
+              [ <command> ]
+            done
+            ```
+        - One caveat with while loops is that if the variable in the condition never changes or will never become false, you'll start and endless while loop. For loops generally iterate through a iterable object of a define size and so usually don't get caught in this behavior.
 
 0. ##### Text editors #####
-    0. Nano
-    0. Vim
-    0. Gedit
-    0. Atom
+    0. *Nano.*
+    0. *Vim.*
+    0. *Gedit.*
+    0. *Atom.*
 
 0. ##### Running scripts #####
 
 0. ##### Connecting to remote computers #####
-    0. ssh
-    0. Putty
-    0. Forwarding
+    0. *ssh.*
+    0. *Putty.*
+    0. *Forwarding.*
     0. **exit**
 
 0. ##### Advanced commands #####
