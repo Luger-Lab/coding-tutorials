@@ -256,10 +256,8 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
         - Eventually, we will learn how to input values into the script and how to make them executable.
 
 0. ##### Connecting to remote computers #####
-    0. *ssh.*
-    0. *Putty.*
-    0. *Forwarding.*
-    0. **exit**
+    0. *ssh.* To log into a terminal securely from one Linux (or Mac) machine to another you can open a terminal and use `ssh <user>@<computer_address>`. To stop the connection use `exit`.
+    0. *PuTTY.* [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) allows Windows machines to ssh into Linux machines using a GUI to produce a terminal emulator on the Windows end. 
 
 0. ##### Advanced commands #####
     0. **top** Checks jobs running in the local environment.
@@ -320,3 +318,8 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
       - To start a single Sbatch job use `sbatch <script_name.script` this will give you a jobid that you can use to monitor your job status.
       - To stop a job that you no longer want to run or is failing in someway use `scancel <jobid>`. You can only cancel your own jobs.
       - To check the status of all the jobs in a queue use `squeue` if you only want to see your jobs `squeue -u <your_user>`
+
+## Practice
+0. Use a text editor to make and run a bash script that produces a text file containing a message.
+0. Use a text editor to make and run a bash script that uses a loop to append a message 20 times times onto the previous text file.
+0. Use a text editor to make and run a bash script that creates an array of file names, then uses a for loop to create all of the files.
