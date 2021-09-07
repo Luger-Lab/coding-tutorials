@@ -38,7 +38,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 0. ##### Setting up a sandbox #####
   A sandbox is a safe environment in which to code without being able to break your computer. In our case we will be using CU's Computer Science coding space :
 
-  https://coding.csel.io/hub/login
+  [https://coding.csel.io/hub/login](https://coding.csel.io/hub/login)
 
   - All you need to do is sign in with your CU credentials.
   - Once logged in click on the 'Default Coding Environment' widget (we'll discuss how this service actually works in a later tutorial).
@@ -257,7 +257,7 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
 
 0. ##### Connecting to remote computers #####
     0. *ssh.* To log into a terminal securely from one Linux (or Mac) machine to another you can open a terminal and use `ssh <user>@<computer_address>`. To stop the connection use `exit`.
-    0. *PuTTY.* [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) allows Windows machines to ssh into Linux machines using a GUI to produce a terminal emulator on the Windows end. 
+    0. *PuTTY.* [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) allows Windows machines to ssh into Linux machines using a GUI to produce a terminal emulator on the Windows end.
 
 0. ##### Advanced commands #####
     0. **top** Checks jobs running in the local environment.
