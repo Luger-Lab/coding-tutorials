@@ -23,8 +23,6 @@
     0. [Queues](#queues)
     0. [Out and error files](#out-and-error-files)
     0. [Starting, stopping, and monitoring jobs](#starting-stopping-and-monitoring-jobs)
-    0. [Dependencies](#dependencies)
-    0. [Best practices](#best-practices)
 
 ## Linux
 Linux is the kernel on which most high performance computing (HPC) is done. A kernel is the software that allows an operating system to control physical hardware. The Linux kernel is based on UNIX and is open source and free to use by anyone, as its creator [Linus Tuvolds](https://en.wikipedia.org/wiki/Linus_Torvalds) started the kernel under a GNU license back in the early 90's. Anyone can contribute code to the kernel, as long as it passes a series of revisions and oversight. Because so many people contribute to the code it is constantly being improved.
@@ -264,22 +262,61 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     0. **exit**
 
 0. ##### Advanced commands #####
-    0. **top**
-    0. **crtl+c**
-    0. **history**
-    0. **clear**
-    0. **\***
-    0. **rsync**
-    0. **grep**
-    0. **screen**
-    0. **chmod**
-    0. **sudo**
+    0. **top** Checks jobs running in the local environment.
+    0. **crtl+c** Kills the currently running job in a terminal. Can be dangerous as it simply interrupts.
+    0. **history** Displays inputs to your command line back a certain amount of time. Useful for remembering how tou did something you forgot to write down or put in a script.
+    0. **clear** Clears out all of the displayed command line (not your history).
+    0. **\*** This is the symbol for a 'wildcard' it will do your command on everything matching your pattern. `cat *.txt` will read all text files in your directory. `mv red* new_red_folder` will move anything starting with 'red' into the 'new_red_folder'.
+    0. **rsync** A smart `cp`. Use `rsyn -auP source_directory destination_directory` to make a copy of a folder. Running this command a second time will update and existing files and copy new ones. This makes keeping a copy of a file super simple becuase you don't have to copy every single file each time, just ones that have changed.
+    0. **grep** Use `grep "<keyword>"` to find a matching pattern in a list of files or `grep "<keyword>" <file_name>` to look inside of a file and find a keyword.
+    0. **screen** A powerful tool for keeping a terminal alive and returning to it later.
+        - `screen -S <screen_name>` creates a screen_name
+        - `ctrl+a+d` detaches the screen and allows it to run even if you logout or disconnect your computer (not if it gets turned off).
+        - `screen -r <screen_name>` reatches the screen session.
+        - `exit` from inside the screen will kill the screen session.
+    0. **sudo** 'Super User Do' can be placed in front of commands that require superuser privileges. You usually don't have the ability to use this unless it's on your own computer. **If you google something and it tells you to use sudo to fix it, don't. Sudo commands can irreversibly mess up your computer.**  
 
 ## Slurm
   0. ##### Description #####
+  [SLURM](https://slurm.schedmd.com/overview.html) is a workload manager common to most HPC clusters that allows users to submit jobs to it and then allocates resources based on a number of parameters. We will use this to do work on the [BioKEM](https://cu-biokem.github.io/BioKEM_docs/) cluster. There many advantages to running jobs on clusters including access to orders of magnitude more resources, reproducible environments, and the ability to maximize computing efficiency.
+
   0. ##### Sbatch scripts #####
+  Sbatch scripts are the scripts SLURM requires. They start with a header which contains information that SLURM will use to allocate resources and run the script. There are four main parts of an Sbatch script:
+      - Specification of which language to interpret the script. This section is denoted by a shebang followed by the path to the binary, in most cases: `#!/bin/bash`
+      - Next are all of the SLURM parameters. Which ones are required are cluster specific, but generally you should be as explicit as possible, we'll talk more about these parameters in the [How computers work](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/) tutorial.
+      - Then, you'll load all of the modules you need to run your program `module load <modules>`.
+      - Finally, you can run your commands.
+      - You can use the .sbatch file extension to denote files
+          ```
+          #!/bin/bash
+          #SBATCH -p <partition> # Partition or queue.
+          #SBATCH --job-name=<job_name> # Job name
+          #SBATCH --mail-type=END # Mail events (NONE, BEGIN, END, FAIL, ALL)
+          #SBATCH --mail-user=<email@colorado.edu>
+          #SBATCH --nodes=<#> # Only use a single node
+          #SBATCH --cpus-per-task=50 # cpus
+          #SBATCH --mem=24gb # Memory limit
+          #SBATCH --time=24:00:00 # Time limit hrs:min:sec
+          #SBATCH --output=/Users/%u/slurmfiles_out/slurm_%j.out # Standard output and error log
+          #SBATCH --error=/Users/%u/slurmfiles_err/slurm_%j.err # %j inserts job number
+
+          module load <modules>
+          <commands>
+          ```
   0. ##### Queues #####
+  When you submit a job to SLURM, it goes into a queue where it wait to run.
+      - Running the command `squeue` shows you what is going on in the cluster's queue:
+          ```
+          fiji-1:~$ squeue
+          JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          7861375      long    job_0 ding1018  R 7-13:11:09      1 fijinode-60
+          7874945     titan nf-dreg_ lysa8537 PD       0:00      1 (Resources)
+          7874946     titan nf-dreg_ lysa8537 PD       0:00      1 (Priority)
+          ```
+      - You get cursory information about everyone's jobs on the cluster and see where it's running (node name), if it's at the top of the queue waiting for resources to open up (Resources), or if it's lower in the queue waiting for other jobs to run (Priority)
   0. ##### Out and error files #####
+  Running an Sbatch job will make two files with the jobid followed by the extensions .out or .err. You will need to you specify the folders you want these deposited into in your Sbtach header. The .out (output) file will give you any outputs that would normally appear on the command line during the run. The .err (error) file is useful for debugging and understanding what went wrong during failed runs.
   0. ##### Starting, stopping, and monitoring jobs #####
-  0. ##### Dependencies #####
-  0. ##### Best practices #####
+      - To start a single Sbatch job use `sbatch <script_name.script` this will give you a jobid that you can use to monitor your job status.
+      - To stop a job that you no longer want to run or is failing in someway use `scancel <jobid>`. You can only cancel your own jobs.
+      - To check the status of all the jobs in a queue use `squeue` if you only want to see your jobs `squeue -u <your_user>`
