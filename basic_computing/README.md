@@ -231,13 +231,25 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
               [ <command> ]
             done
             ```
-        - One caveat with while loops is that if the variable in the condition never changes or will never become false, you'll start and endless while loop. For loops generally iterate through a iterable object of a define size and so usually don't get caught in this behavior.
+        - One caveat with while loops is that if the variable in the condition never changes or will never become false, you'll start an endless while loop. For loops generally iterate through a iterable object of a define size and so usually don't get caught in this behavior.
 
 0. ##### Text editors #####
-    0. *Nano.*
-    0. *Vim.*
-    0. *Gedit.*
-    0. *Atom.*
+    0. *Nano.* Nano is one of the simplest command line text editors you can use and is installed on almost all Linux machines. It is great for quick edits, but is hard to debug unless you are intimately familiar with your script.
+        - `nano <new_file>` will create a file and open it in the edit (a common behavior with most editors)
+        - move around with arrow keys
+        - `ctrl+x` exits the program, but asks if you want to save your file as the same name or a different one. Answer `y` to save and exit or `n` to exit without saving.
+        - see more: https://www.nano-editor.org/docs.php
+    0. *Vim.* Vim is one of the most widespread command line text editors because it color codes text and helps the use more than nano. Vim suffers from terrible documentation although you can always google your question to figure it out.
+        - `vi <new_file>` creates and opens a file
+        - Vim has two modes: edit and command. When in edit mode, you can make changes to your document.
+        - `esc` gets you from the edit mode to command input mode (you can't exit until you get to command mode).
+        - `:q` quits the editor without saving
+        - `:qw` quits and writes (saves) the file
+        - some documentation: https://www.vim.org/
+    0. *Gedit.* Gedit is a graphical editor that may not come installed on your Linux machine, but many find easy to use.
+        - `gedit <new_file>` creates and opens a gui with your file to edit it.
+        - Documentation: https://help.gnome.org/users/gedit/stable/
+    0. *Atom.* A really powerful graphical text editor that I like to use is called Atom and is built by Github, specifically to work well with Github. You can downloaded it and find out more at https://atom.io/
 
 0. ##### Running scripts #####
 
