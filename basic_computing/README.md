@@ -252,6 +252,10 @@ Although many Linux applications have easy to use graphical user interfaces (GUI
     0. *Atom.* A really powerful graphical text editor that I like to use is called Atom and is built by Github, specifically to work well with Github. You can downloaded it and find out more at https://atom.io/
 
 0. ##### Running scripts #####
+    Now that we know how to use bash and edit files, we can make scripts. Scripts are files that contain a series of commands that we can run, use to streamline pipelines, and share with others.
+        - `<program_name> <script_name>` is the general formula for running scripts.
+        - `bash <script.sh>` is how we can run a script using bash. The file extension `.sh` is often used to specify a bash specific script.
+        - Eventually, we will learn how to input values into the script and how to make them executable.
 
 0. ##### Connecting to remote computers #####
     0. *ssh.*
