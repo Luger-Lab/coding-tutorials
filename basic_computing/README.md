@@ -1,5 +1,9 @@
 # Basic computing - Linux, Bash, and SLURM
 [Return to mainpage](https://luger-lab.github.io/coding-tutorials/)
+
+## Goal
+To give a basic introduction to coding (in Bash) and how to use Linux based machines.
+
 ## Contents
 0. [Linux](#linux)
 0. [Bash](#bash)
