@@ -24,7 +24,7 @@ This set of tutorials will teach [lugerlab](https://lugerlab.org/) members how t
 ## [Basic computing - Linux, Bash, and SLURM](https://luger-lab.github.io/coding-tutorials/basic_computing/)
 Most scientific computing is conducted through operating systems based on the Linux kernel (such as CentOS or Ubuntu). These operating systems use a terminal language known as Bash. Although a lot of actual programming can be done through Bash, it is not as intuitive and easy to debug as languages like Python, so most people simply use it to navigate Linux-based systems and submit programs written in other languages. Some labs have individual workstations that allow users to run their jobs immediately; however scientific computing is trending towards cluster and cloud based data centers. These have the benefits of many more resources that are used more efficiently, they are managed by IT departments, and can be accessed from anywhere. The system most of these data centers rely on to manage which jobs are ran using which resources is called SLURM. In this module, we will discuss how and why we should use Linux, Bash, and SLURM.
 
-## Basic computing - How computers work
+## [Basic computing - How computers work](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/)
 In order to use computers effectively and understand why jobs fail, we will discuss how computers work generally, where normal bottlenecks are encountered, and how to avoid and fix simple ones.
 
 ## Basic Python
