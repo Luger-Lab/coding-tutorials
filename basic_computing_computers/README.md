@@ -2,7 +2,7 @@
 
 [Return to the Coding Tutorials mainpage](https://luger-lab.github.io/coding-tutorials/)
 
-## <div style="text-align: left">[&larr; Back to Basic Computing](https://luger-lab.github.io/coding-tutorials/basic_computing/)
+## <div style="text-align: left"> [&larr; Back to Basic Computing](https://luger-lab.github.io/coding-tutorials/basic_computing/)
 
 ## Goal
 To give a cursory overview of the basic components of stand alone computers and clusters.
@@ -45,4 +45,4 @@ To give a cursory overview of the basic components of stand alone computers and 
     0. Benefits
     0. Drawbacks
 
-## <div style="text-align: right">[Continue to Bits &rarr;](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/bits/)
+## <div style="text-align: right"> [Continue to Bits &rarr;](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/bits/)
