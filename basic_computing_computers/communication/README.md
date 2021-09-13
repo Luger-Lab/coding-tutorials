@@ -2,9 +2,9 @@
 
 [Return to the How Computers Work mainpage](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/)
 
-## <div style="text-align: left">[&larr; Back to Storage](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/storage/)
+## [&larr; Back to Storage](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/storage/)
 
 ## Goal
 In order for computers to transfer information internally and externally they need robust communication systems. 
 
-## <div style="text-align: right">[Continue to Clusters &rarr;](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/clusters/)
+## [Continue to Clusters &rarr;](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/clusters/)
