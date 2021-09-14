@@ -9,8 +9,6 @@ To give a cursory overview of the basic components of stand alone computers and 
 
 ## Contents
 0. [Bits](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/bits/)
-    0. Capacitors
-    0. Voltage gates
 0. [Hardware](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/hardware/)
     0. Motherboards
     0. CPUs
