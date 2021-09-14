@@ -20,4 +20,4 @@ Computers store data by trapping electrons inside capacitors. There are differen
     0. *RAID 10.* RAID 10 is the RAID employed in large scale operations like computing clusters and cloud storage systems. It is a combination of RAID 1 and 0, in which you create a larger serial device and then mirror it. This allows for super fast read/write speeds and redundancy. The disadvantages are that it's expensive because your data capacity is only half of the amount your drives can hold and you have be potential to lose data after only 2 drive failures, however in practice you'd have to be really unlucky. And data centers backup their RAIDs frequently anyway.
     **There are more types of RAIDs than these listed, but these are the most common.**
 
-## [Continue to Communication &rarr;](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/clusters/)
+## [Continue to Clusters &rarr;](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/clusters/)
