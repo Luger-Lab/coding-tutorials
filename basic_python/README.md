@@ -25,7 +25,7 @@ To learn the basic of coding in Python.
 0. [Logic](https://luger-lab.github.io/coding-tutorials/basic_python/logic/)
     0. Boolean
     0. is/is not
-    0. Comparisons
+    0. Value comparisons
     0. If statements
 
 ## [Continue to Getting started &rarr;](https://luger-lab.github.io/coding-tutorials/basic_python/getting_started/)
