@@ -16,22 +16,22 @@ The quotes here specify that "hello world" is a string and not another object th
 
 ## Variables
 To assign a variable simply type the name of the variable, the equals sign and then the value you wish to assign. This variable can be: a integer, floating point, string, or boolean.
-    ```
+
     var1 = 15
     print(var1)
     15
-    ```
+
 You can change the value of a variable by using the same syntax again and simply imputing a new value.
-    ```
+
     var1 = "hello world"
     print(var1)
     hello world
-    ```
+
 You can check the type of a variable using:
-    ```
+
     type(var1)
     <class 'str'>
-    ```
+
 ## Lists
 ## Sets
 ## Dictionaries
