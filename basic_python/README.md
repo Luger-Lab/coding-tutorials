@@ -1,0 +1,30 @@
+# Basic Python
+
+[Return to the Coding Tutorials mainpage](https://luger-lab.github.io/coding-tutorials/)
+
+## [&larr; Back to How Computers Work](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/)
+
+## Goal
+To learn the basic of coding in Python.
+
+## Contents
+0. [Getting started](https://luger-lab.github.io/coding-tutorials/basic_python/getting_started/)
+    0. Command line Python
+    0. IDEs
+    0. Sandbox
+0. [Basic commands](https://luger-lab.github.io/coding-tutorials/basic_python/basic_commands/)
+    0. Print
+    0. Variables
+    0. Lists
+    0. Sets
+    0. Dictionaries
+0. [Loops](https://luger-lab.github.io/coding-tutorials/basic_python/loops/)
+    0. For loops
+    0. While loops
+0. [Logic](https://luger-lab.github.io/coding-tutorials/basic_python/logic/)
+    0. Boolean
+    0. If statements
+    0. is/is not
+    0. Comparisons
+
+## [Continue to Getting Started &rarr;](https://luger-lab.github.io/coding-tutorials/basic_python/getting_started/)

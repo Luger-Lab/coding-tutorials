@@ -27,7 +27,7 @@ Most scientific computing is conducted through operating systems based on the Li
 ## [Basic computing - How computers work](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/)
 In order to use computers effectively and understand why jobs fail, we will discuss how computers work generally, where normal bottlenecks are encountered, and how to avoid and fix simple ones.
 
-## Basic Python
+## [Basic Python](https://luger-lab.github.io/coding-tutorials/basic_python/)
 Python is one of the most widely used programming languages for scientific and data research. It is intuitive, easy to debug, and can handle fairly large data sets. In addition, it is open source, provides modules for most applications, and creates beautiful figures. One of its main drawbacks is that it is fairly slow when compared to other languages like MatLab.
 
 ## Github
