@@ -1,4 +1,4 @@
-# Getting Started
+# Getting started
 
 [Return to the Basic Python mainpage](https://luger-lab.github.io/coding-tutorials/basic_python/)
 
@@ -16,4 +16,4 @@ Integrated Development Environments (IDEs) like IDLE or PyCharm allow users to e
 ## Sandbox
 For simpliccity, we will learn how to use Python through our sandbox environment: [https://coding.csel.io/hub/login](https://coding.csel.io/hub/login). We will first explore Python through the terminal, then using an IDE (the console option), and finally in a notebook (ipykernel option).
 
-## [Continue to Basic Commands &rarr;](https://luger-lab.github.io/coding-tutorials/basic_python/basic_commands/)
+## [Continue to Basic commands &rarr;](https://luger-lab.github.io/coding-tutorials/basic_python/basic_commands/)

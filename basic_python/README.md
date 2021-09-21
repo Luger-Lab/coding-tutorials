@@ -1,8 +1,8 @@
 # Basic Python
 
-[Return to the Coding Tutorials mainpage](https://luger-lab.github.io/coding-tutorials/)
+[Return to the Coding tutorials mainpage](https://luger-lab.github.io/coding-tutorials/)
 
-## [&larr; Back to How Computers Work](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/)
+## [&larr; Back to How computers work](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/)
 
 ## Goal
 To learn the basic of coding in Python.
@@ -27,4 +27,4 @@ To learn the basic of coding in Python.
     0. is/is not
     0. Comparisons
 
-## [Continue to Getting Started &rarr;](https://luger-lab.github.io/coding-tutorials/basic_python/getting_started/)
+## [Continue to Getting started &rarr;](https://luger-lab.github.io/coding-tutorials/basic_python/getting_started/)
