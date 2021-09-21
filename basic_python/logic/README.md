@@ -32,8 +32,46 @@ c is not b
 True
 ```
 ## Value comparisons
+You can also use value operators like `>` greater than, `<` less than, `==` equal to, or `!=` not equal to to compare the values of two items. The value returned will be a boolean.
+```
+15 < 14
+False
+```
+The `==` and `!=` operators differ from is and is not, in that they compare values and not memory assignments.
 
-
+```
+d = 15
+15 == d
+True
+```
 ## If statements
+All of these comparisons are useful for starting and ending loops. They can also be used in `if statements`. And `if statement` executes an operation if a logical operation returns `True`.
+```
+d = 15
+if d == 15:
+  print("d equals 15")
+d equals 15
+```
+If your logical operation is not `True`, you can execute an operation when the if statement fails using `else`.
+```
+d = 14
+if d == 15:
+  print("d equals 15")
+else:
+  print("d doesn't equal 15")
+d doesn't equal 15
+```
+Third option is to execute an addition conditional operation when the if statement is `False` using `elif` (else-if).
+```
+d = 14
+if d == 15:
+  print("d equals 15")
+elif d == 14:
+  print("d equals 14")
+else:
+  print("d doesn't equal 15")
+d doesn't equal 14
+```
+**You can use as many `if` and `elif` conditions as you want per if statement, but only one else statement. Tabs matter.**
 
 ## [Back to Coding tutorials mainpage &rarr;](https://luger-lab.github.io/coding-tutorials/)
