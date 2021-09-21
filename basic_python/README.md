@@ -15,8 +15,9 @@ To learn the basic of coding in Python.
 0. [Basic commands](https://luger-lab.github.io/coding-tutorials/basic_python/basic_commands/)
     0. Print
     0. Variables
-    0. Lists
+    0. Tuples
     0. Sets
+    0. Lists
     0. Dictionaries
 0. [Loops](https://luger-lab.github.io/coding-tutorials/basic_python/loops/)
     0. For loops
