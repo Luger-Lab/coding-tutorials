@@ -1,1 +1,1 @@
-![](view.html)
+![view](view.html)
