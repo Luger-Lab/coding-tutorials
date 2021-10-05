@@ -9,7 +9,7 @@ This set of tutorials will teach [lugerlab](https://lugerlab.org/) members how t
 0. [Basic computing - Linux, Bash, and SLURM](#basic-computing---linux-bash-and-slurm) (9/7/21 - E225)
 0. [Basic computing - How computers work](#basic-computing---how-computers-work) (9/14/21 - B432)
 0. [Basic Python](#basic-python) (9/21/21 - E225)
-0. [Advanced Python - Writing clean code](#advanced-python---writing-clean-code) (10/5/21 - E225)
+0. [Advanced Python - Conda, packages, and scripting](#advanced-python---conda-packages-and-scripting) (10/5/21 - E225)
 0. [Advanced Python - Jupyter notebooks, Matplotlib, and Plotly](#advanced-python---jupyter-notebooks-matplotlib-and-plotly) (10/12/21 - B432)
 0. [Github](#github) (10/19/21 - E225)
 0. [Structural analysis - Chimera and ChimeraX](#structural-analysis---chimera-and-chimerax) (10/24/21 - E225)
@@ -29,7 +29,7 @@ In order to use computers effectively and understand why jobs fail, we will disc
 ## [Basic Python](https://luger-lab.github.io/coding-tutorials/basic_python/)
 Python is one of the most widely used programming languages for scientific and data research. It is intuitive, easy to debug, and can handle fairly large data sets. In addition, it is open source, provides modules for most applications, and creates beautiful figures. One of its main drawbacks is that it is fairly slow when compared to other languages like MatLab.
 
-## Advanced Python - Writing clean code
+## [Advanced Python - Conda, packages, and scripting](https://luger-lab.github.io/coding-tutorials/advanced_python_code/)
 In order to share and update code, it needs to be easy to read and debug. We call this type of code 'clean code'. This tutorial will explain how to organize pieces of Python code in such a way that they will be easy for you and others to look at in the future. We will also learn how to write documentation, write and run unit and functional tests, and adhere to the PEP8 guidelines for writing Python code.
 
 ## Advanced Python - Jupyter notebooks, Matplotlib, and Plotly

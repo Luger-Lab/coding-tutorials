@@ -1,4 +1,4 @@
-# Advanced Python - Conda, packages and scripting
+# Advanced Python - Conda, packages, and scripting
 
 [Return to the Coding tutorials mainpage](https://luger-lab.github.io/coding-tutorials/)
 
