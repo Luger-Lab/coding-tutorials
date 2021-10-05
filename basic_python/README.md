@@ -5,7 +5,7 @@
 ## [&larr; Back to How computers work](https://luger-lab.github.io/coding-tutorials/basic_computing_computers/)
 
 ## Goal
-To learn the basic of coding in Python.
+To learn the basics of coding in Python.
 
 ## Contents
 0. [Getting started](https://luger-lab.github.io/coding-tutorials/basic_python/getting_started/)
