@@ -9,13 +9,12 @@ This set of tutorials will teach [lugerlab](https://lugerlab.org/) members how t
 0. [Basic computing - Linux, Bash, and SLURM](#basic-computing---linux-bash-and-slurm) (9/7/21 - E225)
 0. [Basic computing - How computers work](#basic-computing---how-computers-work) (9/14/21 - B432)
 0. [Basic Python](#basic-python) (9/21/21 - E225)
-0. [Github](#github) (9/28/21 - E225)
-0. [Advanced Python - Jupyter notebooks, Matplotlib, and Plotly](#advanced-python---jupyter-notebooks-matplotlib-and-plotly) (10/5/21 - E225)
-0. [Advanced Python - Writing clean code](#advanced-python---writing-clean-code) (10/12/21 - B432)
-0. [Structural analysis - Chimera and ChimeraX](#structural-analysis---chimera-and-chimerax) (10/19/21 - E225)
-0. [Structural analysis - VMD](#structural-analysis---vmd) (10/24/21 - E225)
+0. [Advanced Python - Writing clean code](#advanced-python---writing-clean-code) (10/5/21 - E225)
+0. [Advanced Python - Jupyter notebooks, Matplotlib, and Plotly](#advanced-python---jupyter-notebooks-matplotlib-and-plotly) (10/12/21 - B432)
+0. [Github](#github) (10/19/21 - E225)
+0. [Structural analysis - Chimera and ChimeraX](#structural-analysis---chimera-and-chimerax) (10/24/21 - E225)
 0. [EM analysis - RELION](#em-analysis---relion) (11/2/21 - E225)
-0. [EM analysis - cryoSparc](#em-analysis---cryosparc) (11/9/21 - E225)
+0. [EM analysis - CryoSparc](#em-analysis---cryosparc) (11/9/21 - E225)
 0. [Crystallography analysis - CCP4](#crystallography-analysis---ccp4) (11/16/21 - E225)
 0. [Molecular dynamics - AMBER](#molecular-dynamics---amber) (11/30/21 - E225)
 0. [Molecular dynamics - NAMD](#molecular-dynamics---namd) (12/7/21 - E225)
@@ -30,23 +29,20 @@ In order to use computers effectively and understand why jobs fail, we will disc
 ## [Basic Python](https://luger-lab.github.io/coding-tutorials/basic_python/)
 Python is one of the most widely used programming languages for scientific and data research. It is intuitive, easy to debug, and can handle fairly large data sets. In addition, it is open source, provides modules for most applications, and creates beautiful figures. One of its main drawbacks is that it is fairly slow when compared to other languages like MatLab.
 
-## Github
-Sharing, storing, and updating software are important aspects of managing code. One of the most widespread ways to do this is through Github. Git is a version control software; a software that keeps track of changes you make to code and ensures that you are always working on up-to-date versions. Github is a repository that allows you and anyone you want to work on the same piece of code. Github stores your code and uses a management system to let users work on different pars of code and then merge it into one project, with the goal of avoiding conflicting lines that will break the code. The other main advantage of Github is that it's a unified source from which to pull other peoples' code and host your own. We will also learn how to write Github flavored Markdown (a great way to keep documentation simple).
-
-## Advanced Python - Jupyter notebooks, Matplotlib, and Plotly
-Now that we can write simple Python code and push it to Github, we will focus on how to use three powerful Python packages: Jupyter notebooks, Matplotlib, and Plotly. These tools will help you make quick analysis pipelines, elegant static figures, and powerful interactive figures, respectfully. You will also encounter these packages in Python-base programs like cryoSparc and AMBER, know how to use them will greatly increase the usefulness and troubleshooting of these other programs.
-
 ## Advanced Python - Writing clean code
 In order to share and update code, it needs to be easy to read and debug. We call this type of code 'clean code'. This tutorial will explain how to organize pieces of Python code in such a way that they will be easy for you and others to look at in the future. We will also learn how to write documentation, write and run unit and functional tests, and adhere to the PEP8 guidelines for writing Python code.
+
+## Advanced Python - Jupyter notebooks, Matplotlib, and Plotly
+Now that we can write simple Python code and push it to Github, we will focus on how to use three powerful Python packages: Jupyter notebooks, Matplotlib, and Plotly. These tools will help you make quick analysis pipelines, elegant static figures, and powerful interactive figures, respectfully. You will also encounter these packages in Python-base programs like CryoSparc and AMBER, know how to use them will greatly increase the usefulness and troubleshooting of these other programs.
+
+## Github
+Sharing, storing, and updating software are important aspects of managing code. One of the most widespread ways to do this is through Github. Git is a version control software; a software that keeps track of changes you make to code and ensures that you are always working on up-to-date versions. Github is a repository that allows you and anyone you want to work on the same piece of code. Github stores your code and uses a management system to let users work on different pars of code and then merge it into one project, with the goal of avoiding conflicting lines that will break the code. The other main advantage of Github is that it's a unified source from which to pull other peoples' code and host your own. We will also learn how to write Github flavored Markdown (a great way to keep documentation simple).
 
 ## Structural analysis - Chimera and ChimeraX
 With a firm base knowledge of computing and writing code, we will being moving onto how to use structural biology specific software. Chimera and ChimeraX are a pair of programs designed to display and analyze PDBs and electron density maps, using both GUIs and the command line. Chimera is a fully functional program that we will use to analyze and build structures as well as write and import code to customize and speed up this process. ChimeraX is the successor of Chimera, however it doesn't contain all of features of Chimera yet. We will use ChimeraX to develop publication and presentation quality figures, do interactive molecular dynamics simulations, and look at structures in virtual reality.
 
-## Structural analysis - VMD
-In addition to Chimera/X, VMD is a structural viewing program that is geared towards users that prefer using the command line. Being able to switch between Chimera/X and VMD will enable to do many tasks quickly, because each program is suited to perform certain tasks better than the other.
-
 ## EM analysis - RELION
-## EM analysis - cryoSparc
+## EM analysis - CryoSparc
 ## Crystallography analysis - CCP4
 ## Molecular dynamics - AMBER
 After obtaining a structure, it is often informative to simulate it under different conditions and perturbations using molecular dynamics (MD) simulations. These simulations can help you understand how stable parts of the structure are as well as what impact specific perturbations might have. AMBER is a proprietary Python-based software which academic labs can use for a small fee. We will discuss how MD works generally, how to set up a simulation using AMBER, and how to interpret and analyze the resulting simulations. We will also discuss the main caveats of MD simulations.
